@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 import '../../../../utils/constants/colors.dart';
 import '../curved_edges/curved_edges_widget.dart';
