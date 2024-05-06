@@ -4,6 +4,7 @@ import 'package:flutter_emboss_store/utils/constants/sizes.dart';
 
 import '../../../../common/widgets/custom_shapes/containers/primary_header_container.dart';
 import '../../../../common/widgets/custom_shapes/containers/search_container.dart';
+import '../../../../common/widgets/texts/section_heading.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -24,6 +25,21 @@ class HomeScreen extends StatelessWidget {
                   /// searchbar
                   TSearchContainer(text: 'Search in Store',),
                   SizedBox(height: TSizes.spaceBtwSections,),
+
+                  /// categories
+                  Padding(
+                    padding: EdgeInsets.only(left: TSizes.defaultSpace),
+                    child: Column(
+                      children: [
+
+                        /// heading
+                        TSectionHeading(title: 'Popular Categories', showActionButton: false,),
+                        SizedBox(height: TSizes.spaceBtwItems,),
+
+
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
