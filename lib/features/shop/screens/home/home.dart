@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_emboss_store/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:flutter_emboss_store/features/shop/screens/home/widgets/home_categories.dart';
+import 'package:flutter_emboss_store/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:flutter_emboss_store/utils/constants/image_strings.dart';
 import 'package:flutter_emboss_store/utils/constants/sizes.dart';
 
 import '../../../../common/widgets/custom_shapes/containers/primary_header_container.dart';
 import '../../../../common/widgets/custom_shapes/containers/search_container.dart';
-import '../../../../common/widgets/images/rounded_image.dart';
 import '../../../../common/widgets/texts/section_heading.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -51,7 +51,7 @@ class HomeScreen extends StatelessWidget {
             /// body
             Padding(
               padding: EdgeInsets.all(TSizes.defaultSpace),
-              child: TRoundedImage(imageUrl: TImages.promoBanner1,),
+              child: TPromoSlider(banners: [TImages.promoBanner1, TImages.promoBanner2, TImages.promoBanner3],),
             ),
           ],
         ),
