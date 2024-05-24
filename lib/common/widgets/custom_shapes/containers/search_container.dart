@@ -7,7 +7,7 @@ import '../../../../utils/device/device_utility.dart';
 import '../../../../utils/helpers/helper_functions.dart';
 
 class TSearchContainer extends StatelessWidget {
-  const TSearchContainer({
+  const  TSearchContainer({
     super.key,
     required this.text,
     this.icon = Iconsax.search_normal,
@@ -35,7 +35,7 @@ class TSearchContainer extends StatelessWidget {
           width: TDeviceUtils.getScreenWidth(context),
           padding: const EdgeInsets.all(TSizes.md),
           decoration: BoxDecoration(
-            color: showBackground ? dark ? TColors.dark : TColors.light :Colors.transparent,
+            color: showBackground ? dark ? TColors.dark : TColors.light : Colors.transparent,
             borderRadius: BorderRadius.circular(TSizes.cardRadiusLg),
             border: showBorder ? Border.all(color: TColors.grey) : null,
           ),
