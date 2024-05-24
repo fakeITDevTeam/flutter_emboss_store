@@ -36,12 +36,12 @@ class TProductCardVertical extends StatelessWidget {
             TRoundedContainer(
               height: 180,
               padding: const EdgeInsets.all(TSizes.sm),
-              backgroundColor: dark ? Colors.black : TColors.light,
+              backgroundColor: dark ? TColors.dark : TColors.light,
               child: Stack(
                 children: [
                   /// thumbnail image
                   TRoundedImage(
-                    backgroundColor: dark ? Colors.black : TColors.light,
+                    backgroundColor: dark ? TColors.dark : TColors.light,
                     imageUrl: TImages.productImage1, applyImageRadius: true,
                   ),
                   /// sale tag
@@ -92,7 +92,7 @@ class TProductCardVertical extends StatelessWidget {
                 ),
                 Container(
                   decoration: const BoxDecoration(
-                    color: Colors.black,
+                    color: TColors.dark,
                     borderRadius: BorderRadius.only(topLeft: Radius.circular(TSizes.cardRadiusMd),
                       bottomRight: Radius.circular(TSizes.productImageRadius),
                     ),
